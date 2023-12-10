@@ -39,10 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-    'graphene_django',
+    ##'graphene_django',
     'ckeditor',
     'ckeditor_uploader',
-    'corsheaders',
+    ##'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -127,6 +127,9 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# CKEditor
+CKEDITOR_UPLOAD_PATH = "posts/uploads/%Y/%m/%d/"
 
 # Media Files
 MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
