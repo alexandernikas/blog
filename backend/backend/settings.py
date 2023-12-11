@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'graphene_django',
     'ckeditor',
     'ckeditor_uploader',
-    ##'corsheaders',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -53,6 +53,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+
 ]
 
 ROOT_URLCONF = 'backend.urls'
@@ -142,3 +144,6 @@ AUTH_USER_MODEL = 'blog.User'
 GRAPHENE = {
     "SCHEMA": "blog.schema.schema",
 }
+
+CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_WHITELIST = ("http://localhost:8080",) # Matches the port that Vue.js is using
