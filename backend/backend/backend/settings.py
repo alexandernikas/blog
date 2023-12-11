@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-    ##'graphene_django',
+    'graphene_django',
     'ckeditor',
     'ckeditor_uploader',
     ##'corsheaders',
@@ -137,3 +137,8 @@ MEDIA_URL = '/media/'
 
 # Change Default User Model
 AUTH_USER_MODEL = 'blog.User'
+
+# Configure GraphQL
+GRAPHENE = {
+    "SCHEMA": "blog.schema.schema",
+}
