@@ -146,4 +146,4 @@ GRAPHENE = {
 }
 
 CORS_ORIGIN_ALLOW_ALL = False
-CORS_ORIGIN_WHITELIST = ("http://localhost:5173",) # Matches the port that Vue.js is using
+CORS_ORIGIN_WHITELIST = ("http://localhost:8080",) # Matches the port that Vue.js is using
