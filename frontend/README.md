@@ -1,6 +1,5 @@
 # frontend
 
-<<<<<<< Updated upstream
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
@@ -28,27 +27,3 @@ npm run dev
 ```sh
 npm run build
 ```
-=======
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
->>>>>>> Stashed changes
